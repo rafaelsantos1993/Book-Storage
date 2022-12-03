@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Handler</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="book-handler"></script>
-</head>
-<body>
-    <header>
-        <h1>Book Notes</h1>
-        <h2>Keep track of your favorite books</h2>
-    </header>
-    <div class = "action-buttons">
-        <button id = "add-button">Add</button>
-        <button id = "remove-button">Remove</button>
-    </div>
-    <div class="layout-area"></div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Handler</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="bookHandler.js" defer></script>
+        
+    </head>
+    <body>
+        <header>
+            <h1>Book Notes</h1>
+            <h2>Keep track of your favorite books</h2>
+        </header>
+        <div class = "action-buttons">
+            <button id = "add-button">Add</button>
+            <button id = "remove-button">Remove</button>
+        </div>
+        <output class="layout-area"></output>
+        <dialog id="post-book">
+            <form action="" method="dialog">
+                <legend>Book Information</legend>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+                <label for="author">Author</label>
+                <input type=author" id="author" name="author">
+                <label for="page">Pages</label>
+                <input type="text" id="page" name="page">
+                <div class="dialog-buttons">
+                    <button id = "confirm-button" value = "default">
+                        Confirm
+                    </button>
+                    <button id = "cancel-button" value = "cancel">
+                        Cancel
+                    </button>
+                </div>
+                <label class="switch">Read
+                    <input id = "read" type="checkbox">
+                </label>
+            </form>
+        </dialog>
+    </body>
 </html>
