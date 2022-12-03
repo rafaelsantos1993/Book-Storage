@@ -4,8 +4,7 @@ body{
     margin: 0;
 }
 
-/*Defines a flex column display for the header
-*/
+/*Defines a flex column display for the header*/
 header{
     display: flex;
     flex-direction: column;
@@ -19,7 +18,6 @@ header{
 }
 
 /*Style font-size of main hedears*/
-
 header>h1{
     font-size: 2rem;
     margin-bottom: 0;
@@ -41,7 +39,6 @@ header>h2 {
 }
 
 /*Style notes area*/
-
 .layout-area {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
@@ -51,7 +48,6 @@ header>h2 {
 }
 
 /*Style buttons*/
-
 #add-button, #remove-button {
     border-radius: 10px;
     width: 80px;
@@ -66,9 +62,79 @@ header>h2 {
     border-width: 1px;
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
 }
+
 /*Style button when pressed*/
-#add-button:active, #remove-button:active {
+#add-button:active, #remove-button:active, #confirm-button:active, #cancel-button:active {
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    
 }
+
+/*Style dialog box*/
+#post-book{
+    background-color: #86af49;;
+    border-radius: 30px;
+    margin-top: 20px;
+    border-style: solid;
+    color:aliceblue;
+    border-color: #405d27;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    padding-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+label{
+    font-size: 0.75em;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 6px;
+}
+input{
+    border-radius: 5px;
+    border-style: none;
+    padding-left: 10px;
+}
+input:focus{
+    outline-color: #405d27;
+}
+#confirm-button, #cancel-button {
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 8px;
+    background-color:  #eca1a6;
+    border-style: none;
+    color: white;
+    border: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+#confirm-button{
+    margin-right: 2.5px;
+}
+#cancel-button{
+    margin-left: 2.5px;
+}
+.dialog-buttons{
+    align-self: center;
+}
+.switch{
+    align-self: flex-end;
+}
+.post-card{
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+
